@@ -1,0 +1,142 @@
+.container-fluid
+{
+  background-color: #dbdbdb;
+}
+
+/* main portion of my page, pic in background */
+#content
+{
+  background-image: url("profilepic.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 1000px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.7;
+}
+
+/* navigation bar */
+nav
+{
+  width: 1000px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #333;
+  overflow: hidden;
+}
+
+nav li
+{
+  display: inline;
+  margin-left: 10px;
+  padding: 50px;
+  font-size: 24px;
+}
+
+/* navigation bar links */
+nav a
+{
+  text-decoration: none;
+  color: #f50057;
+}
+
+nav a:hover
+{
+  color: #97a6aa;
+  font-size: 36px;
+}
+
+/* Body message over background picture */
+.headline
+{
+  position: absolute;
+  top: 300px;
+  left: 400px;
+}
+
+.headline p
+{
+  font-family: 'Tangerine', cursive;
+  font-size:42px;
+}
+
+footer
+{
+  float: right;
+  margin: 30px;
+  font-family: fantasy;
+  font-weight: bolder;
+}
+
+/* 3X3 Grid for displaying projects */
+.floating-box li
+{
+	display:inline-block;
+	width: 200px;
+  height: 220px;
+  border: 3px solid #f50057;
+  border-radius: 10px;
+  position: relative;
+  left: 300px;
+}
+
+/* Pictures become circular when you hover over them */
+.floating-box img:hover{
+border-radius:50%;
+box-shadow: 0 10px 6px -6px grey;
+}
+
+.floating-box img {
+-webkit-transition: all 0.7s ease;
+transition: all 0.7s ease;
+}
+
+header
+{
+  text-align: center;
+  font-size: 48px;
+}
+
+.firstsection h2
+{
+  text-align: center;
+}
+
+/* Skills section of the resume */
+.firstsection
+{
+    margin: 20px;
+    width:200px;
+    height: 220px;
+    border: 3px solid #f50057;
+    border-top-left-radius: 80px 50px;
+    margin-left: 250px;
+}
+
+.secondsection h2
+{
+  text-align: center;
+}
+
+/* Education section of the resume */
+.secondsection li
+{
+  list-style-type: none;
+}
+
+.secondsection
+{
+    width:230px;
+    height: 220px;
+    border: 3px solid #f50057;
+    border-top-right-radius: 80px 50px;
+    margin-left: 500px;
+  }
+
+@media(max-width: 1015 px)
+{
+  #content { width: 700px;}
+}

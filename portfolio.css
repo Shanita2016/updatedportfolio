@@ -1,75 +1,39 @@
-.container-fluid
-{
-  background-color: #dbdbdb;
+.content {
+  width: 1100px;
+  height: 500px;
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* main portion of my page, pic in background */
-#content
-{
-  background-image: url("profilepic.jpg");
-  background-repeat: no-repeat;
+.content::after {
+  content: "";
+  background: url("profilepic.jpg");
+  background-image: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 1000px;
-  height: 500px;
   margin-left: auto;
   margin-right: auto;
   opacity: 0.7;
-}
-
-/* navigation bar */
-nav
-{
-  width: 1000px;
-  height: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #333;
-  overflow: hidden;
-}
-
-nav li
-{
-  display: inline;
-  margin-left: 10px;
-  padding: 50px;
-  font-size: 24px;
-}
-
-/* navigation bar links */
-nav a
-{
-  text-decoration: none;
-  color: #f50057;
-}
-
-nav a:hover
-{
-  color: #97a6aa;
-  font-size: 36px;
-}
-
-/* Body message over background picture */
-.headline
-{
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   position: absolute;
-  top: 300px;
-  left: 400px;
+  z-index: -1;
 }
 
-.headline p
+.content p
 {
-  font-family: 'Tangerine', cursive;
-  font-size:42px;
+  text-align: center;
+  padding: 250px;
+  font-family: Tangerine, cursive;
+  font-size: 32px;
+  font-color: black;
+  font-weight: bold;
 }
 
-footer
-{
-  float: right;
-  margin: 30px;
-  font-family: fantasy;
-  font-weight: bolder;
-}
 
 /* 3X3 Grid for displaying projects */
 .floating-box li
@@ -136,7 +100,7 @@ header
     margin-left: 500px;
   }
 
-@media(max-width: 1015 px)
+@media(max-width: 1018 px)
 {
   #content { width: 700px;}
 }
